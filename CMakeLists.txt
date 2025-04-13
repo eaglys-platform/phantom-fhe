@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
 
+# [option] PHANTOM_BUILD_STATIC (default: OFF)
+option(PHANTOM_BUILD_STATIC "Build static library" OFF)
+message(STATUS "Build static library: ${PHANTOM_BUILD_STATIC}")
+
 project(Phantom LANGUAGES CXX CUDA VERSION 2.1 DESCRIPTION "CUDA-Accelerated Homomorphic Encryption Library")
 
 # [option] PHANTOM_USE_CUDA_PTX (default: ON)
